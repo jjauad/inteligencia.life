@@ -1,0 +1,98 @@
+<!DOCTYPE>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>NOVO SITE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+
+
+
+  </head>
+
+  <body id="body" onload="myFunction()">
+
+    <!-- texto 1 -->
+    <div class="texto1" id="texto1">
+      <p>
+        Brasileiro Descobre Aplicativo que Paga
+        <span class="texto1-destaque">De R$ 400,00 a R$ 900,00 por dia</span>
+        apenas para você dar a sua opinião!
+      </p>
+
+    </div>
+
+    <div class="texto2" id="texto2">
+      <p>
+        Assista a reportagem para descobrir como funciona:
+      </p>
+
+    </div>
+
+    <!-- imagem
+    <div class="imagem" id="imagem">
+      	<img src="foto1.jpg" alt="imagem" />
+    </div> -->
+
+    <div class="video-vsl" style="width: min(70rem, 90%); margin: auto;" id="video-vsl">
+
+      <script type="text/javascript" id="scr_63ac93999970f5000a94914a">var s=document.createElement("script");s.src="https://scripts.converteai.net/fd9e251a-6047-4d08-bda1-1eb7ca1e0606/players/63ac93999970f5000a94914a/player.js",s.async=!0,document.head.appendChild(s);</script>
+
+    </div>
+
+
+    <div class="rodape" id="rodape">
+      <div class="rodape-links-1">
+        <a href="https://www.globo.com/">globo.com</a>&nbsp |
+        <a href="#">g1</a>&nbsp |
+        <a href="#">globo esporte</a>&nbsp |
+        <a href="#">gshow</a>&nbsp |
+        <a href="#">famosos</a>&nbsp |
+
+      </div>
+      <div class="rodape-links-2">
+        <a href="#">vídeos</a>&nbsp |
+        <a href="#">todos os sites</a>
+
+      </div>
+      <div class="rodape-g1" id="rodape-g1">
+        <a href="#">g1</a>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+
+
+      function myFunction(){
+        var body = document.getElementById("body");
+        var texto1 = document.getElementById("texto1");
+        var texto2 = document.getElementById("texto2");
+        var video_vsl = document.getElementById("video-vsl");
+        var rodapeG1 = document.getElementById("rodape-g1");
+
+        var alturaBody = body.clientHeight;
+        var alturaTexto1 = texto1.clientHeight;
+        var alturaTexto2 = texto2.clientHeight;
+        var alturaVideo = video_vsl.clientHeight;
+        var alturaRodapeG1 = alturaBody - (alturaTexto1 + alturaTexto2 + alturaVideo + 180);
+
+
+        //var altura = rodape.clientHeight;
+        //console.log(alturaRodape);
+
+        rodapeG1.style.height = alturaRodapeG1;
+        rodape.style.width = "100%";
+      }
+
+
+
+    </script>
+
+
+
+  </body>
+
+</html>
